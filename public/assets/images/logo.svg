@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Rounded Gradient Background Badge -->
+  <rect width="48" height="48" rx="14" fill="url(#logo-grad)"/>
+  
+  <!-- Playful Graduation Cap / Book Iconography -->
+  <path d="M24 12L38 19L24 26L10 19L24 12Z" fill="#F4A340" stroke="#FAF7EE" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M15 22.5V31C15 34 19 36.5 24 36.5C29 36.5 33 34 33 31V22.5" fill="none" stroke="#FAF7EE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M38 20V29" stroke="#F4A340" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="38" cy="30.5" r="1.8" fill="#F4A340"/>
+  
+  <!-- Sparkle Accent -->
+  <path d="M38 10L39 12L41 13L39 14L38 16L37 14L35 13L37 12L38 10Z" fill="#FEF3D6"/>
+
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2442"/>
+      <stop offset="100%" stop-color="#0D7E8A"/>
+    </linearGradient>
+  </defs>
+</svg>

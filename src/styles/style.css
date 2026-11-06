@@ -1,0 +1,168 @@
+/* ==========================================================================
+   STYLE.CSS - Base & Custom Stationery Styling for Bimbel Mumtaz Sampit
+   ========================================================================== */
+
+:root {
+  --primary: #0f2442;
+  --primary-deep: #0a192e;
+  --primary-container: #132b4f;
+  --teal-mumtaz: #0d7e8a;
+  --teal-light: #14919b;
+  --teal-soft: #e6f6f7;
+  --secondary: #ea580c;
+  --secondary-bright: #f97316;
+  --accent-amber: #f59e0b;
+  --paper-cream: #faf7ee;
+  --paper-soft: #f5f0e3;
+  --paper-border: #e8e1cf;
+  --surface: #ffffff;
+  --on-surface: #1c1c17;
+  --on-surface-variant: #4b5563;
+}
+
+/* Base Body Setup */
+html {
+  font-size: 13.5px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+
+body {
+  background-color: var(--paper-cream);
+  color: var(--on-surface);
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-handwriting {
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1eee5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d7e8a;
+  border-radius: 5px;
+  border: 2px solid #f1eee5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f2442;
+}
+
+/* Stationery Background Textures */
+
+/* 1. Notebook Ruled Paper Texture with Vertical Margin Guideline */
+.notebook-lines {
+  background-color: #faf7ee;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #fca5a5 79px, #fca5a5 81px, transparent 81px),
+    linear-gradient(#e5e1d3 1px, transparent 1px);
+  background-size: 100% 100%, 100% 32px;
+}
+
+/* 2. Repeating Subtle Ruled Lines */
+.ruled-bg {
+  background-image: repeating-linear-gradient(transparent, transparent 27px, #e8e3d3 28px);
+}
+
+/* 3. Paper Notebook Texture (Multi-Stop Warm Cream & Champagne Gradient + Subtle Dot Pattern) */
+.paper-notebook {
+  background-color: #fff9e9;
+  background-image:
+    radial-gradient(rgba(18, 59, 80, 0.045) 1px, transparent 0),
+    radial-gradient(ellipse at 85% 15%, rgba(244, 163, 64, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at 12% 80%, rgba(40, 124, 128, 0.1) 0%, transparent 55%),
+    linear-gradient(180deg, #fff9e9 0%, #fdefc9 48%, #fef6de 100%);
+  background-size: 20px 20px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* 3b. Cool Aqua-Sky Notebook Variant for Kontak Section */
+.paper-notebook-aqua {
+  background-color: #e2f3f5;
+  background-image:
+    radial-gradient(rgba(18, 59, 80, 0.045) 1px, transparent 0),
+    radial-gradient(ellipse at 82% 18%, rgba(20, 145, 155, 0.15) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 78%, rgba(245, 158, 11, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, #e2f3f5 0%, #cde9ed 50%, #f0f9fa 100%);
+  background-size: 20px 20px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* 4. Graph Paper / Math Grid Texture (Soft Aqua-Mint Gradient + Grid) */
+.paper-graph {
+  background-color: #dcefed;
+  background-image: 
+    linear-gradient(to right, rgba(40, 124, 128, 0.075) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(40, 124, 128, 0.075) 1px, transparent 1px),
+    radial-gradient(ellipse at 15% 20%, rgba(253, 230, 138, 0.25) 0%, transparent 55%),
+    radial-gradient(ellipse at 88% 75%, rgba(40, 124, 128, 0.14) 0%, transparent 55%),
+    linear-gradient(180deg, #dcefed 0%, #c8e7e4 48%, #eef8f6 100%);
+  background-size: 24px 24px, 24px 24px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* 5. Scrapbook / Dot Grid Texture (Lush Sage-Mint & Warm Sunlit Gradient + Dots) */
+.paper-scrapbook {
+  background-color: #def0e7;
+  background-image:
+    radial-gradient(rgba(40, 124, 128, 0.22) 1px, transparent 1px),
+    radial-gradient(ellipse at 85% 22%, rgba(251, 191, 36, 0.16) 0%, transparent 55%),
+    radial-gradient(ellipse at 14% 75%, rgba(16, 185, 129, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, #def0e7 0%, #c9e7d8 50%, #f1faf5 100%);
+  background-size: 24px 24px, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* 6. Airmail Envelope Striped Border */
+.airmail-border {
+  height: 12px;
+  background: repeating-linear-gradient(
+    135deg,
+    #ba1a1a 0px,
+    #ba1a1a 15px,
+    #ffffff 15px,
+    #ffffff 22px,
+    #001636 22px,
+    #001636 37px,
+    #ffffff 37px,
+    #ffffff 44px
+  );
+}
+
+/* Contact Map Background Container (Replaces inline style) */
+.contact-map-preview {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2C6GI1FON4ErVr2nEpGYMm_i4TNfkIGwmayKTPl2tXDWYluV0t-kVpStjRx4yBRx87JqVNL8nHyyZUeG-fFHM0s0BwPn_ApfX0h5F3aq6_-_xfSES24n6v_2pbrys0MhaMGqpum9JEED_iaTeNSnnw5cM4sLWZELhmzh1bb3H7-VuMDiIkRNBVsVs5dIoIR5Ff9nxe0VP-jw-3liQAaZDzW-fCz3vvHdrUmN_RA");
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Diagonal Pattern for Contact Section */
+.diagonal-lines-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(40, 124, 128, 0.08) 0,
+    rgba(40, 124, 128, 0.08) 1px,
+    transparent 0,
+    transparent 20px
+  );
+}
+
+/* Dot Pattern Overlay */
+.dot-matrix-pattern {
+  background-image: radial-gradient(rgba(40, 124, 128, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}

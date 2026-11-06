@@ -1,0 +1,294 @@
+/* ==========================================================================
+   COMPONENTS.CSS - Specific Component Styling for Bimbel Mumtaz Sampit
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. WASHI TAPES (Decorative Japanese Paper Tapes)
+   -------------------------------------------------------------------------- */
+.washi-strip-yellow,
+.washi-tape {
+  background: rgba(253, 224, 71, 0.75);
+  box-shadow: 0 1px 4px rgba(18, 59, 80, 0.12);
+  border-left: 2px dashed rgba(234, 179, 8, 0.4);
+  border-right: 2px dashed rgba(234, 179, 8, 0.4);
+  backdrop-filter: blur(1px);
+}
+
+.washi-strip-orange {
+  background: rgba(249, 115, 22, 0.65);
+  box-shadow: 0 1px 4px rgba(18, 59, 80, 0.12);
+  border-left: 2px dashed rgba(194, 65, 12, 0.4);
+  border-right: 2px dashed rgba(194, 65, 12, 0.4);
+  backdrop-filter: blur(1px);
+}
+
+.washi-strip-teal,
+.washi-tape-teal {
+  background: rgba(45, 212, 191, 0.6);
+  box-shadow: 0 1px 4px rgba(18, 59, 80, 0.12);
+  border-left: 2px dashed rgba(13, 148, 136, 0.4);
+  border-right: 2px dashed rgba(13, 148, 136, 0.4);
+  backdrop-filter: blur(1px);
+}
+
+.washi-strip-green {
+  background: rgba(168, 201, 181, 0.7);
+  box-shadow: 0 1px 4px rgba(18, 59, 80, 0.12);
+  border-left: 2px dashed rgba(74, 120, 93, 0.4);
+  border-right: 2px dashed rgba(74, 120, 93, 0.4);
+  backdrop-filter: blur(1px);
+}
+
+/* --------------------------------------------------------------------------
+   2. PUSHPINS (3D Stationery Pins)
+   -------------------------------------------------------------------------- */
+.pushpin-red,
+.pushpin-teal,
+.pushpin-yellow {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 25;
+  box-shadow: 
+    inset -2px -2px 4px rgba(0, 0, 0, 0.35),
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.pushpin-red {
+  background: radial-gradient(circle at 35% 35%, #ff6b6b, #c92a2a 70%, #861818);
+}
+
+.pushpin-teal {
+  background: radial-gradient(circle at 35% 35%, #66d9e8, #0c8599 70%, #084c59);
+}
+
+.pushpin-yellow {
+  background: radial-gradient(circle at 35% 35%, #ffe066, #f59f00 70%, #b86e00);
+}
+
+/* --------------------------------------------------------------------------
+   3. PAPERCLIP (Metal Wire Vector Helper)
+   -------------------------------------------------------------------------- */
+.paperclip {
+  position: absolute;
+  top: -14px;
+  left: 28px;
+  width: 32px;
+  height: 48px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* --------------------------------------------------------------------------
+   4. TACTILE SQUISHY BUTTONS (Physical stationery click)
+   -------------------------------------------------------------------------- */
+.btn-tactile-primary {
+  box-shadow: 0 4px 0 #0c1e38;
+  transform: translateY(0);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-tactile-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #0c1e38;
+}
+
+.btn-tactile-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #0c1e38;
+}
+
+.btn-tactile-orange {
+  box-shadow: 0 4px 0 #9a3412;
+  transform: translateY(0);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-tactile-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #9a3412;
+}
+
+.btn-tactile-orange:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #9a3412;
+}
+
+/* --------------------------------------------------------------------------
+   5. FAQ ACCORDION COMPONENT
+   -------------------------------------------------------------------------- */
+.faq-item {
+  border: 2px solid #e2d9c8;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbf2 60%, #fdf3dc 100%);
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.faq-item:nth-child(even) {
+  background: linear-gradient(135deg, #ffffff 0%, #f4fbf9 60%, #e4f4f1 100%);
+  border-color: rgba(40, 124, 128, 0.28);
+}
+
+.faq-item.active {
+  border-color: #0d7e8a;
+  background: linear-gradient(135deg, #ffffff 0%, #f0faf8 55%, #dff3ef 100%);
+  box-shadow: 0 10px 25px -5px rgba(13, 126, 138, 0.14);
+}
+
+.faq-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  color: #0f2442;
+  transition: color 0.2s ease;
+}
+
+.faq-trigger:hover {
+  color: #0d7e8a;
+}
+
+.faq-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #e6f6f7;
+  color: #0d7e8a;
+  flex-shrink: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s ease;
+}
+
+.faq-item.active .faq-icon-wrapper {
+  transform: rotate(180deg);
+  background-color: #0d7e8a;
+  color: #ffffff;
+}
+
+.faq-collapse {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+  padding: 0 1.25rem;
+}
+
+.faq-item.active .faq-collapse {
+  max-height: 400px;
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   6. MODAL DIALOG (Portal Orang Tua)
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 36, 66, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-dialog {
+  background: #ffffff;
+  border: 2px solid #e8e1cf;
+  border-radius: 1.75rem;
+  box-shadow: 0 25px 50px -12px rgba(15, 36, 66, 0.25);
+  max-width: 34rem;
+  width: 100%;
+  overflow: hidden;
+  transform: scale(0.92) translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.is-open .modal-dialog {
+  transform: scale(1) translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   7. FLOATING QUICK ACTION PILL (WhatsApp / Konsultasi)
+   -------------------------------------------------------------------------- */
+.floating-quick-action {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 25px -5px rgba(18, 140, 126, 0.4);
+  transition: all 0.25s ease;
+}
+
+.floating-quick-action:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 32px -6px rgba(18, 140, 126, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   8. STATS COUNTER STYLING
+   -------------------------------------------------------------------------- */
+.stat-counter-val {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* --------------------------------------------------------------------------
+   9. NAVBAR PILL LINKS (Active Pill Highlight)
+   -------------------------------------------------------------------------- */
+.nav-item-link {
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-link.active {
+  color: #0f2442 !important;
+  font-weight: 700 !important;
+}
+
+.nav-item-link.active .nav-active-pill {
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.nav-item-link:not(.active) .nav-active-pill {
+  opacity: 0;
+}
+
+.nav-item-link:not(.active):hover .nav-active-pill {
+  opacity: 0.35;
+}
